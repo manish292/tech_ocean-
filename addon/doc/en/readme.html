@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trackpad Gestures for NVDA - help</title>
+</head>
+<body>
+<h1>Trackpad Gestures for NVDA, version 0.5</h1>
+<p>This add-on lets you use TalkBack-style gestures, with one to four fingers, on your laptop's touchpad, the way VoiceOver gestures work on a MacBook trackpad. Turn it on and off whenever you like.</p>
+
+<h2>What is new in version 0.5</h2>
+<ul>
+<li>Edge swipes for the system panels, like VoiceOver: a short one-finger swipe in from an edge of the touchpad reaches the Start button, the taskbar, the system tray, the ribbon, notifications, quick settings and widgets. See "Edge swipes for the system panels" below.</li>
+<li>The add-on finds out by itself which Windows version you have and where your taskbar is, and fits the edge swipes to it.</li>
+<li>A new section, "Edge swipes (system panels)", under One finger in the gesture list in settings.</li>
+</ul>
+
+<h2>What was new in version 0.4</h2>
+<ul>
+<li>A gesture list in the Trackpad Gestures settings, where you choose what every gesture does. It is sorted by one, two, three and four fingers. Each of these has sections for taps, swipes and holds; two-part (angular) swipes; and zones near the edges.</li>
+<li>More zones: a double tap near any edge with one, two, three or four fingers, and a long press near any edge with two, three or four fingers. A zone you have not given a command does the same as the normal gesture, so nothing changes until you choose.</li>
+<li>New commands you can give to any gesture: time and date, battery, read the clipboard, recognise text on screen (OCR), read the current line, read the selection, speech mode, volume up, volume down, mute, next track and previous track.</li>
+</ul>
+
+<h2>What was new in version 0.3</h2>
+<ul>
+<li>Windows' own three and four finger gestures are turned off automatically while trackpad gestures are on, and put back exactly as they were when you turn trackpad gestures off. You no longer need to change them in Touchpad settings. You can switch this off in the settings.</li>
+<li>Two-finger long press (hold two fingers still for half a second): go back to the application you are working in. From the taskbar, system tray, desktop or Task View, it brings that application to the front. Inside the application, it leaves the ribbon or menus (like pressing Escape) and goes back to the document, sheet or file list.</li>
+<li>Three-finger and four-finger long press are also recognised. They have no command yet, so you can give them one in Input gestures.</li>
+</ul>
+
+<h2>What was new in version 0.2</h2>
+<ul>
+<li>Swipe right and left now just move to the next and previous item, in a way that suits where you are: files in a folder, menus, lists, Word documents, Excel cells and web pages.</li>
+<li>A new "Items (default)" reading control. It is the first reading control, so swipe up and down also move item by item until you choose another control.</li>
+<li>New reading controls for work: panes and panels (F6), taskbar, system tray, table cells (Excel and tables), Excel sheets, PowerPoint slides, sentences, controls (Tab), and speech rate.</li>
+<li>You can turn each reading control on or off, and change their order, in NVDA Settings.</li>
+<li>Two-finger double taps near the edges of the touchpad: top for the ribbon or menu bar, bottom for the taskbar, left for Task View, right for the system tray.</li>
+<li>Editing gestures: selection mode, copy, paste, undo, redo and save.</li>
+</ul>
+
+<h2>Before you start: check your touchpad</h2>
+<ol>
+<li>Press Windows+R, type <kbd>ms-settings:devices-touchpad</kbd> and press Enter.</li>
+<li>Press Tab a few times. If you hear "Your PC has a precision touchpad", you are ready.</li>
+</ol>
+
+<h2>Windows' own three and four finger gestures</h2>
+<p>From version 0.3 the add-on turns these off for you while trackpad gestures are on, and puts them back when you turn trackpad gestures off. If Windows still reacts to three or four finger swipes the first time, sign out of Windows and back in once. If you prefer to change them yourself, uncheck "Turn off Windows' own three and four finger gestures" in the settings and follow these steps:</p>
+<ol>
+<li>In the same Touchpad settings page, press Tab until you reach "Three-finger gestures" and press Space or Enter to expand it.</li>
+<li>Tab to the "Swipes" combo box and choose "Nothing" with the arrow keys. Then Tab to "Taps" and choose "Nothing".</li>
+<li>Do the same under "Four-finger gestures".</li>
+</ol>
+
+<h2>Turning gestures on and off</h2>
+<ul>
+<li>NVDA+Shift+G turns gestures on or off. A high beep means on, a low beep means off.</li>
+<li>A four-finger double tap turns gestures off.</li>
+<li>While gestures are on, the touchpad does not move the mouse pointer or click.</li>
+</ul>
+
+<h2>Gestures</h2>
+<h3>One finger: moving</h3>
+<ul>
+<li>Swipe right: next item.</li>
+<li>Swipe left: previous item.</li>
+<li>Swipe down: forward by the current reading control.</li>
+<li>Swipe up: back by the current reading control.</li>
+<li>Swipe up then down: next reading control.</li>
+<li>Swipe down then up: previous reading control.</li>
+<li>Touch and hold still, then slide: explore what is under your finger in the current window.</li>
+</ul>
+<h3>One finger: taps</h3>
+<ul>
+<li>Tap: speak the current item.</li>
+<li>Double tap: activate (open a file, press a button, follow a link).</li>
+<li>Triple tap: report formatting (font, size, style), useful in Word.</li>
+<li>Double tap and hold: context menu, like long press.</li>
+</ul>
+<h3>One finger: two-part swipes</h3>
+<ul>
+<li>Down then left: back (previous web page, or Escape elsewhere).</li>
+<li>Up then left: home (show desktop).</li>
+<li>Left then up: switch to the previous app (Alt+Tab).</li>
+<li>Right then down: notifications.</li>
+<li>Down then right: NVDA menu.</li>
+<li>Up then right: read the status bar (page and word count in Word, and so on).</li>
+<li>Left then right: switch between browse mode and focus mode (NVDA+Space).</li>
+<li>Right then left: elements list (NVDA+F7) for headings, links, and comments in Word.</li>
+<li>Left then down: undo.</li>
+<li>Right then up: redo.</li>
+</ul>
+<h3>Two fingers</h3>
+<ul>
+<li>Tap: stop speech.</li>
+<li>Double tap in the middle: play or pause media.</li>
+<li>Double tap near the top edge: ribbon or menu bar (Alt).</li>
+<li>Double tap near the bottom edge: taskbar (Windows+T).</li>
+<li>Double tap near the left edge: Task View, to choose any open window (Windows+Tab).</li>
+<li>Double tap near the right edge: system tray (Windows+B).</li>
+<li>Triple tap: selection mode on or off.</li>
+<li>Long press (hold still for half a second): go back to the application you are working in, and to its document, sheet or list.</li>
+<li>Swipe up: Page Down. Swipe down: Page Up.</li>
+<li>Swipe left: next tab. Swipe right: previous tab.</li>
+</ul>
+<h3>Three fingers</h3>
+<ul>
+<li>Tap: NVDA menu.</li>
+<li>Double tap: copy.</li>
+<li>Triple tap: paste.</li>
+<li>Swipe down: read from here. Swipe up: read from the top.</li>
+<li>Swipe right: next reading control. Swipe left: previous reading control.</li>
+</ul>
+<h3>Four fingers</h3>
+<ul>
+<li>Tap: speak the focused item.</li>
+<li>Double tap: turn trackpad gestures off.</li>
+<li>Swipe right: next pane or panel (F6). Swipe left: previous pane (Shift+F6).</li>
+<li>Swipe up: speak the window title.</li>
+<li>Swipe down: save (Control+S).</li>
+</ul>
+
+<h2>How swipe right and left choose what "next item" means</h2>
+<ul>
+<li>Files in a folder, lists, menus, tree views: down and up arrow, so you hear each file or option.</li>
+<li>Tabs, the menu bar, Excel cells and table cells: right and left arrow. In Excel, swipe right and left move along the row.</li>
+<li>Word, Notepad and other documents: line by line.</li>
+<li>Web pages and other browse mode documents: line by line, like the arrow keys.</li>
+<li>Text boxes with one line, and PowerPoint slides: Tab and Shift+Tab. In PowerPoint this moves between the objects on a slide.</li>
+<li>Dialogs and buttons: every item in order, including text that Tab would skip.</li>
+<li>Double tap always activates the item you moved to.</li>
+</ul>
+<p>If you prefer one behaviour everywhere, change "Swipe right and left moves by" in the settings.</p>
+
+<h2>Reading controls</h2>
+<p>Swipe up then down (or three-finger swipe right) to choose a reading control, then swipe down and up to move by it. These are on to begin with:</p>
+<ul>
+<li>Items (default): the same as swipe right and left.</li>
+<li>Characters, Words, Lines: these use NVDA's review cursor, exactly like the numpad review keys. Swipe down is Numpad 3, 6 or 9 (next character, word or line). Swipe up is Numpad 1, 4 or 7 (previous character, word or line). They work with the laptop keyboard layout too. In selection mode they use the real cursor instead, because only the real cursor can select. To always use the real cursor, like the arrow keys, change "Characters, words and lines read with" in the settings.</li>
+<li>Paragraphs: moves the real cursor, like Control+Down Arrow.</li>
+<li>Controls (Tab key): only the things you can press or type into.</li>
+<li>Headings, Links, Form fields, Landmarks: browse mode only. In Word, swipe left then right first to turn on browse mode.</li>
+<li>Table cells: one control for tables. While it is chosen, swipe right and left move cell by cell across the row, and swipe down and up move row by row in the same column. Works in Excel, and in tables in Word and web pages.</li>
+<li>Panes and panels (F6): moves between the main areas of a window, such as Word's ribbon, document and status bar, Excel's sheet and formula area, PowerPoint's slide list, slide and notes, or File Explorer's navigation pane and file list.</li>
+<li>Taskbar: each swipe moves to the next or previous taskbar button. Double tap to open it.</li>
+<li>Sheets: Excel only. Moves to the next or previous worksheet.</li>
+<li>Slides: PowerPoint only. Moves to the next or previous slide.</li>
+<li>Speech rate: swipe down for faster, up for slower.</li>
+</ul>
+<p>These are off to begin with, and you can turn them on: Sentences (Word), All objects (object navigation), Buttons, Edit fields, Lists, Tables, Graphics, and System tray.</p>
+<p>Excel-only and PowerPoint-only controls are skipped automatically when you are in other apps.</p>
+
+<h3>Adding, removing and reordering reading controls</h3>
+<ol>
+<li>Press NVDA+N, then P for Preferences, then S for Settings.</li>
+<li>In the categories list, choose "Trackpad Gestures" with the arrow keys, then press Tab.</li>
+<li>Tab to the "Reading controls" list. Arrow up and down through it. Press Space to check or uncheck a control. Checked means it is in your reading controls.</li>
+<li>To change the order, select a control in the list, then Tab to "Move up" or "Move down" and press Space. NVDA tells you the new position. Shift+Tab takes you back to the list.</li>
+<li>"Reset reading controls" puts the list back to how it started.</li>
+<li>Press Enter on OK to save.</li>
+</ol>
+
+<h2>Working in Word, Excel and PowerPoint</h2>
+<h3>Word</h3>
+<ul>
+<li>Swipe right and left read line by line. Choose Words, Sentences or Paragraphs as the reading control and swipe down and up for finer or bigger steps.</li>
+<li>Selecting text: two-finger triple tap to turn on selection mode. Then every swipe selects as it moves. Three-finger double tap copies, three-finger triple tap pastes. Two-finger triple tap again to turn selection off.</li>
+<li>Headings and links: swipe left then right for browse mode, then use the Headings reading control. Or swipe right then left for the elements list.</li>
+<li>Triple tap for formatting, swipe up then right for page and word count.</li>
+</ul>
+<h3>Excel</h3>
+<ul>
+<li>Choose the "Table cells" reading control. Swipe right and left move cell by cell, swipe down and up move row by row.</li>
+<li>Choose "Sheets" to move between worksheets.</li>
+<li>Selection mode works here too, to select ranges of cells.</li>
+</ul>
+<h3>PowerPoint</h3>
+<ul>
+<li>Choose "Slides" and swipe down and up to change slides.</li>
+<li>Swipe right and left move between the objects on a slide.</li>
+<li>Use "Panes and panels", or four-finger swipes, to reach the slide list and the notes.</li>
+</ul>
+<h3>Everywhere</h3>
+<ul>
+<li>Two-finger double tap near the top edge reaches the ribbon. Then swipe right and left move between ribbon tabs.</li>
+<li>Four-finger swipe down saves.</li>
+<li>Two-finger long press always brings you back: out of the ribbon, out of a pane, or back from the taskbar to your document. In a dialog it tells you so, and leaves the dialog alone.</li>
+</ul>
+
+<h2>Edge swipes for the system panels</h2>
+<p>Put one finger right at the edge of the touchpad and swipe a short way in, quickly, towards the middle. Each edge reaches a different part of Windows.</p>
+
+<h3>How to make an edge swipe</h3>
+<ul>
+<li>Use one finger.</li>
+<li>Start with your finger on the very edge: within the outer tenth of the touchpad. Feeling for the edge with your fingertip first helps.</li>
+<li>Swipe inward, towards the middle, a short distance: more than a twentieth of the touchpad, and less than about two fifths. Keep it quick, under a second, and fairly straight.</li>
+<li>The top and bottom edges each have three places to start: the left corner, the middle and the right corner. The corners are the outer quarter or so at each end of that edge.</li>
+<li>A long swipe that starts near an edge is still a normal swipe, and a tap near an edge is still a tap, so nothing you already use changes.</li>
+</ul>
+
+<h3>First swipe and second swipe</h3>
+<ul>
+<li>The first swipe moves focus there. NVDA reads where you landed. For example, the taskbar swipe puts you on the first app button.</li>
+<li>You can then move around with your usual gestures or keys, for example swipe right to the next taskbar button.</li>
+<li>The same edge swipe again, within 20 seconds and while you are still there, opens or activates what has focus, like pressing Enter.</li>
+<li>Any other gesture in between cancels this, so the next edge swipe starts fresh.</li>
+<li>If the add-on cannot get focus to the taskbar, it says "Could not reach the taskbar" and writes the details to the NVDA log. Press NVDA+F1 and search for "Trackpad Gestures" to find them.</li>
+</ul>
+
+<h3>The edge where your taskbar is</h3>
+<ul>
+<li>Swipe in from the corner where the taskbar starts: the Start button. Swipe again: the Start menu opens.</li>
+<li>Swipe in from the middle: the taskbar app buttons (Windows+T). Swipe again: the focused app opens.</li>
+<li>Swipe in from the corner where the taskbar ends: the system tray (Windows+B). Swipe again: the focused icon opens.</li>
+</ul>
+<p>With the taskbar at the bottom (the usual place), that means: swipe up from the bottom left corner, from the bottom middle, and from the bottom right corner.</p>
+
+<h3>The other edges</h3>
+<ul>
+<li>Swipe down from the top left corner: the app's ribbon or menu bar (Alt).</li>
+<li>Swipe down from the top middle: notifications (Windows+N).</li>
+<li>Swipe down from the top right corner: quick settings, such as Wi-Fi, Bluetooth and volume (Windows+A).</li>
+<li>Swipe right from the left edge: Widgets (Windows+W).</li>
+<li>Swipe left from the right edge: the notification centre (Windows+N).</li>
+</ul>
+<p>These match the edge swipes on Windows touch screens.</p>
+
+<h3>Automatic taskbar detection</h3>
+<ul>
+<li>Every edge swipe checks your Windows version and where your taskbar is, so if you move the taskbar, the swipes follow it straight away.</li>
+<li>Taskbar at the top: the taskbar swipes move to the top edge, and the ribbon, notifications and quick settings swipes move to the bottom edge.</li>
+<li>Taskbar on the left or right side: the taskbar swipes are on that side, in order from the top: swipe in near the top for the Start button, in the middle for the app buttons, and near the bottom for the system tray. Swipes from the other side edge do what they normally do. With a side taskbar, the bottom edge has nothing, and the add-on says "Nothing at this edge".</li>
+<li>Windows 11 lets you centre the taskbar or keep it on the left. Both work the same way here, because the add-on reaches each part with its keyboard shortcut, not by its place on the screen.</li>
+<li>Windows 10 has one Action Center for notifications and quick actions, so the top middle, top right and right edge swipes all open it (Windows+A). The swipe from the left edge opens Task View (Windows+Tab), as a touch screen does on Windows 10.</li>
+</ul>
+
+<h3>Changing what an edge swipe does</h3>
+<p>Open NVDA Settings, choose the "Trackpad Gestures" category, and in the Gestures tree open "One finger", then "Edge swipes (system panels)". Each edge swipe can be given any command, like other gestures. The default is "Goes to the system panel item at that edge; the same swipe again opens it". With input help on (NVDA+1), an edge swipe is spoken by name, for example "swipe down from the top right corner".</p>
+
+<h2>Choosing what each gesture does</h2>
+<ol>
+<li>Press NVDA+N, then P for Preferences, then S for Settings. Choose the "Trackpad Gestures" category, then press Tab until you reach the "Gestures" tree.</li>
+<li>The tree has four branches: One finger, Two fingers, Three fingers and Four fingers. Press Right Arrow to open a branch and Left Arrow to close it. Inside each are the sections: "Taps, swipes and holds", "Two-part swipes (angular)" (one finger only), "Zones near the edges" and "Edge swipes (system panels)" (one finger only).</li>
+<li>Each gesture is read with what it does now, for example "swipe right: Moves to the next item".</li>
+<li>On the gesture you want, press Tab to reach "Command for this gesture". Choose a command with the arrow keys. Commands are grouped by their first word: Navigation, Reading, Activating, Editing, Windows and apps, Information, Media and volume, Speech and Trackpad gestures. Choose "Nothing" to make a gesture do nothing.</li>
+<li>Shift+Tab takes you back to the tree. "Reset this gesture" puts one gesture back to how it came. "Reset all gestures" puts them all back.</li>
+<li>Press Enter on OK to save. Your choices also show in NVDA's Input gestures dialog, and changes made there show here.</li>
+</ol>
+<p>Zones: a zone gesture is the same gesture made near the top, bottom, left or right edge of the touchpad, within about one fifth of it. A zone with no command of its own does the same as the normal gesture. For example, "double tap near the left edge" activates, like a normal double tap, until you give it a command.</p>
+
+<h2>Learning and changing gestures</h2>
+<ul>
+<li>NVDA+1 turns on input help. Any gesture you make is spoken with what it does, but not carried out. Press NVDA+1 again to turn it off.</li>
+<li>To change a gesture, open NVDA menu, Preferences, Input gestures. Expand "Trackpad Gestures", choose a command, press Add, then make the gesture on the touchpad. Cut and Select all have no gesture yet, so you can give them one here.</li>
+</ul>
+
+<h2>Other settings</h2>
+<ul>
+<li>Explore by touch: turn off if holding still starts exploring when you do not want it to.</li>
+<li>Stop the touchpad moving the mouse pointer and clicking: leave on.</li>
+<li>Allow an external mouse: check this if you want a USB mouse to work while gestures are on.</li>
+</ul>
+
+<h2>If something does not work</h2>
+<ul>
+<li>Use input help (NVDA+1) to check which gesture the add-on heard.</li>
+<li>Edge double taps: tap close to the edge, within about one fifth of the touchpad.</li>
+<li>Problems are written to the NVDA log. Press NVDA+F1 and search for "Trackpad Gestures".</li>
+</ul>
+</body>
+</html>
